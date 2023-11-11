@@ -10,6 +10,12 @@
     text-decoration: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 500;
@@ -194,11 +200,20 @@ label {
 
     padding: 0 15px;
 
-    border-radius: 10px;
     border: 1px solid hsl(279, 6%, 75%);
+    border-radius: 10px;
+}
+
+.form input:focus {
+    caret-color: hsl(278, 68%, 11%);
+    outline: none;
+    border-radius: 10px;
+    border: solid 2px hsl(278, 94%, 30%);
 }
 
 .submit-button, .button{
+    cursor: pointer;
+
     height: 55px;
     width: 100%;
 
@@ -263,6 +278,7 @@ label {
 @media (min-width: 875px){
     body {
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .card-preview {
@@ -308,11 +324,24 @@ label {
     }
 
     .form-card {
-        width: 70vw;
         height: 100vh;
     }
 
     .form {
+        width: 50%;
+    }
+
+    .thank-message {
+        width: 40vw;
+        height: 100dvh;
+    }
+
+    .message {
+        margin-bottom: 0;
+        height: 20%;
+    }
+
+    .button {
         width: 50%;
     }
 }
