@@ -126,6 +126,10 @@ body {
     text-transform: uppercase;
 }
 
+.date-card-preview {
+    display: flex;
+}
+
 .card-verso-preview {
     color: white;
 
