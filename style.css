@@ -303,6 +303,12 @@ label {
     display: none;
 }
 
+#return input{
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+
 @media (min-width: 875px){
     body {
         flex-direction: row;
@@ -360,7 +366,7 @@ label {
     }
 
     .thank-message {
-        width: 40vw;
+        width: 30vw;
         height: 100dvh;
     }
 
